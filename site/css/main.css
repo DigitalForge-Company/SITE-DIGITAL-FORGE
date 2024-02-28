@@ -3661,7 +3661,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-email a {
-  font-size: 9rem;
+  font-size: 7rem;
   font-weight: 700;
   line-height: 1.2;
   color: #16275e;
@@ -3713,7 +3713,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-email a {
-    font-size: 7.6rem;
+    font-size: 5rem;
   }
 
 }
@@ -3729,7 +3729,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-email a {
-    font-size: 7.2rem;
+    font-size: 5rem;
   }
 
 }
