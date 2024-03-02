@@ -74,7 +74,7 @@ a {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: #257046;
+    background: #e79e01;
     margin-top: 10px;
     padding: 0.3em 4rem;
     border: none;
@@ -99,7 +99,7 @@ a {
     top: var(--y);
     width: var(--size);
     height: var(--size);
-    background: radial-gradient(circle closest-side, #38a869, transparent);
+    background: radial-gradient(circle closest-side, #fae902, transparent);
     transform: translate(-50%, -50%);
     transition: width 0.2s ease, height 0.2s ease;
 }
@@ -129,7 +129,7 @@ h3{
   
     /* Efeito de escala ao passar o mouse */
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.02);
     }
   }
 

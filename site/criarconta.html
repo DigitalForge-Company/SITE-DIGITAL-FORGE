@@ -19,7 +19,20 @@
             <input type="email" placeholder="Email">
             <h3>Telefone</h3>
             <input type="tel" placeholder=" +55">
-            <button type="submit">Continuar</button>
+            <a href="criarcontap2.html"><button class="color-pursuit-button">
+                <span>Continuar</span>
+            </button></a>
+            <script>
+                document.querySelector('.color-pursuit-button').onmousemove = (e) => {
+            
+                    const x = e.pageX - e.target.offsetLeft
+                    const y = e.pageY - e.target.offsetTop
+            
+                    e.target.style.setProperty('--x', `${x}px`)
+                    e.target.style.setProperty('--y', `${y}px`)
+            
+                }
+            </script>
             <h2>Já tem uma conta?</h2>
             <p><a href="tela_login.html" target="_self" rel="prev">Acessar uma conta</a></p>
         </div>

@@ -35,7 +35,7 @@ img {
 }
 
 h1 {
-    color: #fff;
+    color: #353535;
     font-size: 30px;
     margin-bottom: 30px;
 }
@@ -49,42 +49,58 @@ input {
 }
 
 a {
-    color: #f2cb57;
+    color: #fabc03;
     text-decoration: none;
 }
 
-button {
-    width: 80%;
-    padding: 10px;
-    font-size: 22px;
-    margin-top: 80px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    background: linear-gradient(to bottom, #32965D, #257046);
-    color: #fff;
-    cursor: pointer;
+.color-pursuit-button {
     position: relative;
-  
-    /* Efeito hover */
-    &:hover {
-      box-shadow:
-        0 0 0 0 #f2884b,
-        0 0 1px 1px #f2cb57,
-        0 0 1px 1px #f2884b,
-        0 0 1px 1px #f2cb57;
-        
-    }
-  }
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #257046;
+    margin-top: 10px;
+    padding: 0.3em 10rem;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.color-pursuit-button span {
+    position: relative;
+    pointer-events: none;
+}
+
+.color-pursuit-button::before {
+    --size: 0;
+    content: "";
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #38a869, transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+.color-pursuit-button:hover::before {
+    --size: 400px;
+}
   
 h2{
     margin-top: 40px;
-    color: #fff;
+    color: #474747d5;
     font-size: 12px;
 }
 
 h3{
     text-align: left;
-    color: #ddd;
+    color: #474747;
     font-size: 12px;
     margin-left: 30px;
 }
