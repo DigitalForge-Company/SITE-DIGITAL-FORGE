@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,24 +21,22 @@ body {
 }
 
 .criarconta-form {
-    background-color: #ffffff;
-    width: 350px;
-    padding-top: 35px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 18px;
+    background-color: #f1f1f1;
+    width: 28em;
+    padding-left: 5em;
+    padding-right: 5em;
     border: 0px solid #000000;
     border-radius: 10px;
     text-align: center;
 }
 
 img {
-    width: 100px;
-    margin-bottom: 0px;
+    width: 25em;
 }
 
 h1 {
     color: #222222;
+    margin-top: -1em;
     font-size: 30px;
     margin-bottom: 30px;
 }
@@ -52,7 +50,7 @@ input {
 }
 
 a {
-    color: #e91000;
+    color: #e90000;
     text-decoration: none;
 }
 
@@ -64,7 +62,8 @@ a {
     appearance: none;
     background: #257046;
     margin-top: 10px;
-    padding: 0.3em 8rem;
+    margin-bottom: 1.8em;
+    padding: 0.3em 10rem;
     border: none;
     color: white;
     font-size: 1.2em;
@@ -96,16 +95,6 @@ a {
     --size: 400px;
 }
   
-    /* Efeito hover */
-&:hover {
-    box-shadow:
-    0 0 0 0 #f2884b,
-    0 0 1px 1px #f2cb57,
-    0 0 1px 1px #f2884b,
-    0 0 1px 1px #f2cb57;
-        
-}
-
 h2{
     margin-top: 40px;
     color: #ffffff;
@@ -121,9 +110,10 @@ h3{
 
 h4{
     text-align: left;
-    margin-left: 30px;
+    margin-left: 50px;
     color:rgb(0, 0, 0);
     font-size: 8px;
+    margin-bottom: 2em;
 }
 
   p {
