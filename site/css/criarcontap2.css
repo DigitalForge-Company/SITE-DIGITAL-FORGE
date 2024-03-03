@@ -30,20 +30,50 @@ body {
     text-align: center;
 }
 
-.etapas p{
-    float: right;
+.etapa3 p{
     font-size: 2em;
-    background-color: #ffd000;
-    padding: 0.3em;
-    margin: 20px;
-    place-items: center;
+    margin: 1em;
+    text-align: center;
+    float: right;
+    background-color: #bbbbbb7c;
+    border-radius: 50%;
+    padding-top: 0.5em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-bottom: 0.5em;
+    
 }
 
-img {
-    width: 25em;
+.etapa2 p{
+    font-size: 2em;
+    margin: 1em;
+    text-align: center;
+    float: right;
+    background-color: #fcce00f3;
+    border-radius: 50%;
+    padding-top: 0.5em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-bottom: 0.5em;
+    
+}
+
+.etapa1 p{
+    font-size: 2em;
+    margin: 1em;
+    text-align: center;
+    background-color: #bbbbbb7c;
+    float: right;
+    border-radius: 50%;
+    padding-top: 0.5em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-bottom: 0.5em;
+    
 }
 
 h1 {
+    text-align: center;
     color: #222222;
     margin-top: -1em;
     font-size: 30px;
