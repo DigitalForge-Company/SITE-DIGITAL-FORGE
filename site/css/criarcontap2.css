@@ -30,6 +30,15 @@ body {
     text-align: center;
 }
 
+.etapas p{
+    float: right;
+    font-size: 2em;
+    background-color: #ffd000;
+    padding: 0.3em;
+    margin: 20px;
+    place-items: center;
+}
+
 img {
     width: 25em;
 }
