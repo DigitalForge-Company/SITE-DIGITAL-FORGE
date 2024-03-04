@@ -3971,3 +3971,11 @@ footer a {
 ::-webkit-scrollbar-corner {
 background-color: #06152A;
 }
+
+#text01 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #faef5a 0%, #f19317 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
