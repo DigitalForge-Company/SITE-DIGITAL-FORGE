@@ -13,8 +13,7 @@ body {
 }
 
 .container {
-    margin-top: -2rem;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -28,15 +27,13 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 18px;
-    border: 0px solid #81ec7700;
-    box-shadow: #000000;
+    box-shadow: 0px 5px 40px #0000001f;
     border-radius: 5px;
     text-align: center;
 }
 
 img {
     width: 80px;
-    margin-bottom: -1em;
 }
 
 h1 {
