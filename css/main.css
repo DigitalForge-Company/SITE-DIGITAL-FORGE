@@ -2240,7 +2240,7 @@ body.menu-is-open {
 .home-content__scroll {
   position: absolute;
   right: 9.5rem;
-  bottom: 5.4rem;
+  bottom: 10.4rem;
   -webkit-transform: rotate(-90deg) translate3d(100%, 50%, 0);
   -ms-transform: rotate(-90deg) translate3d(100%, 50%, 0);
   transform: rotate(-90deg) translate3d(100%, 50%, 0);
@@ -4115,6 +4115,7 @@ background-color: #06152A;
   float: left;
   position: relative;
   width: 100%;
+  color: #000000;
   background-color: #e9e0d7;
   background-position: 50%;
   background-size: cover;
@@ -4150,10 +4151,12 @@ background-color: #06152A;
   float: right;
   position: initial;
 }
+
 #wpp-fix .wpp-link + .form-wpp form label {
   line-height: 1;
   margin-bottom: 0px;
 }
+
 #wpp-fix .wpp-link + .form-wpp form label.error {
   font-size: 10px;
   padding: 0 5px;
@@ -4188,7 +4191,8 @@ background-color: #06152A;
   padding: 10px;
   background: #e7ffe7;
   border: 1px solid #e7ffe7;
-  font-size: 1rem;
+  font-size: 3em;
+  color: #000000;
 }
 #wpp-fix .wpp-link + .form-wpp form input.error, #wpp-fix .wpp-link + .form-wpp form input.not-valid {
   border-color: #F44336;
@@ -4204,6 +4208,9 @@ background-color: #06152A;
   float: right;
   margin-top: 5px;
 }
+
+/*botao enviar msg*/
+
 #wpp-fix .wpp-link + .form-wpp form .btn button {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -4229,6 +4236,9 @@ background-color: #06152A;
   background-color: #06342e;
   box-shadow: 0 1px 4px 0 rgba(12, 97, 86, 0.52);
 }
+
+/*-----------------------------------------------------------------*/
+
 #wpp-fix .wpp-link + .form-wpp form .response-output {
   font-size: 0.9rem;
   line-height: 1.2;
@@ -4295,12 +4305,12 @@ background-color: #06152A;
 #wpp-fix .wpp-link + .form-wpp .head-wpp img {
   margin-right: 8px;
   width: 50px;
-  border-radius: 50%;
 }
+
 #wpp-fix .wpp-link + .form-wpp .head-wpp h3 {
   word-break: keep-all;
   padding-right: 30px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #fff;
   margin: 0 0 0 10px;
@@ -4350,13 +4360,13 @@ background-color: #06152A;
 }
 @media (max-width: 767px) {
   #wpp-fix {
-    bottom: 15px;
+    bottom: 10px;
   }
   #wpp-fix svg {
     height: 30px;
   }
   #wpp-fix .wpp-link {
-    padding: 10px;
+    padding: 15px;
   }
   #wpp-fix .wpp-link + .form-wpp form {
     width: 260px;
