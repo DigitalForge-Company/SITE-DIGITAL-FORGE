@@ -4186,13 +4186,15 @@ background-color: #06152A;
   right: -10px;
   top: 0;
 }
+
+
 #wpp-fix .wpp-link + .form-wpp form input[type=text], #wpp-fix .wpp-link + .form-wpp form input[type=tel], #wpp-fix .wpp-link + .form-wpp form input[type=email] {
   border-radius: 4px 0 4px 4px;
   width: 100%;
   padding: 10px;
   background: #e7ffe7;
   border: 1px solid #e7ffe7;
-  font-size: 3em;
+  font-size: 1em;
   color: #000000;
 }
 #wpp-fix .wpp-link + .form-wpp form input.error, #wpp-fix .wpp-link + .form-wpp form input.not-valid {
@@ -4304,8 +4306,9 @@ background-color: #06152A;
   z-index: 6;
 }
 #wpp-fix .wpp-link + .form-wpp .head-wpp img {
+  margin: 5px;
   margin-right: 8px;
-  width: 50px;
+  width: 35px;
 }
 
 #wpp-fix .wpp-link + .form-wpp .head-wpp h3 {
