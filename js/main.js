@@ -257,66 +257,74 @@
 
 })(jQuery);
 
-/*whatsapp*/
-const wppButton = document.getElementById('wpp-link');
-const wppForm = document.getElementById('wpp-form');
-const closeButton = document.getElementById('close-bt');
-const phone = document.getElementById('telefone');
-const mask = document.querySelector('#wpp-fix .mask');
-const response = document.querySelector('#wpp-form .response-output');
-const wppoptions = document.getElementById('wppoptions');
-
-function getData(form) {
-  var formData = new FormData(form);
-  return Object.fromEntries(formData);
-}
-
-function phoneMask (value) {
-  if (!value) return '';
-  value = value.replace(/\D/g,'');
-  value = value.replace(/(\d{2})(\d)/,"($1) $2");
-  value = value.replace(/(\d)(\d{4})$/,"$1-$2");
-  return value;
-}
-
-phone.onkeyup = e => phone.value = phoneMask(e.target.value);
-
-wppButton.onclick = () => { 
-	wppButton.classList.add('hide-this');
-};
-
-mask.onclick = () => {
-	wppButton.classList.remove('hide-this');
-};
-
-closeButton.onclick = () => {
-	wppButton.classList.remove('hide-this');
-};
-
-wppForm.addEventListener('submit', function(e) {
-	e.preventDefault();
-	const formData = getData(e.target);
-	wppForm.classList.add('submitting');
-	response.innerHTML += '<p>Você será redirecionado para o WhatsApp</p>';
-	
-	setTimeout(() => {
-		wppForm.classList.remove('submitting');
-		wppForm.classList.add('sent');
-		
-		setTimeout(() => {
-			window.open(`https://api.whatsapp.com/send?text=Olá meu nome é ${formData.nome}, gostaria de saber mais sobre os seus serviços! Esses são os meus contatos:%0D%0A Telefone: ${formData.telefone} %0D%0A Email: ${formData.email}&phone=553133333333`, '_self');
-		}, 700);
-		
-	}, 2000);
-	
-});
-
-document.addEventListener('keyup', e => {
-	if (e.key == 'Escape') {
-		wppButton.classList.remove('hide-this');
-	}
-});
-
-wppoptions.addEventListener('change', e => {
-	let selectedItem = e.target.value;
-});
+(function($) {
+    var wa_time_out, wa_time_in;
+    $(document).ready(function() {
+      $(".wa__btn_popup").on("click", function() {
+        if ($(".wa__popup_chat_box").hasClass("wa__active")) {
+          $(".wa__popup_chat_box").removeClass("wa__active");
+          $(".wa__btn_popup").removeClass("wa__active");
+          clearTimeout(wa_time_in);
+          if ($(".wa__popup_chat_box").hasClass("wa__lauch")) {
+            wa_time_out = setTimeout(function() {
+              $(".wa__popup_chat_box").removeClass("wa__pending");
+              $(".wa__popup_chat_box").removeClass("wa__lauch");
+            }, 400);
+          }
+        } else {
+          $(".wa__popup_chat_box").addClass("wa__pending");
+          $(".wa__popup_chat_box").addClass("wa__active");
+          $(".wa__btn_popup").addClass("wa__active");
+          clearTimeout(wa_time_out);
+          if (!$(".wa__popup_chat_box").hasClass("wa__lauch")) {
+            wa_time_in = setTimeout(function() {
+              $(".wa__popup_chat_box").addClass("wa__lauch");
+            }, 100);
+          }
+        }
+      });
+  
+      function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+  
+      function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(";");
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == " ") {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+  
+      $("#nta-wa-gdpr").change(function() {
+        if (this.checked) {
+          setCookie("nta-wa-gdpr", "accept", 30);
+          if (getCookie("nta-wa-gdpr") != "") {
+            $('.nta-wa-gdpr').hide(500);
+            $('.wa__popup_content_item').each(function(){
+              $(this).removeClass('pointer-disable');
+              $('.wa__popup_content_list').off('click');
+            })
+          }
+        }
+      });
+  
+      if (getCookie("nta-wa-gdpr") != "") {
+        $('.wa__popup_content_list').off('click');
+      } else{
+        $('.wa__popup_content_list').click(function(){
+          $('.nta-wa-gdpr').delay(500).css({"background" : "red", "color" : "#fff"});
+        });
+      }
+    });
+  })(jQuery);
