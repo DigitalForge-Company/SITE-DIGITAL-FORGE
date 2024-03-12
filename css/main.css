@@ -4037,6 +4037,9 @@ html[data-theme=dark] {
   border-radius: 10px;
   position: relative;
   margin: auto;
+  margin-top: -34.5px;
+  margin-right: 130px;
+
 }
 
 .container-darkmode label:after {
