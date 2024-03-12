@@ -971,8 +971,8 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-  background: #425fb1;
-  border-color: #3e48a5;
+  background: var(--button-sobre-nos);
+  border-color: #000000;
   color: #FFFFFF;
 }
 
@@ -986,8 +986,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-  background: #1337ad;
-  border-color: #f6f2f8;
+  background: var(--button-sobre-nos-hover);
+  border-color: #db9600;
 }
 
 /* button modifiers
@@ -1424,6 +1424,7 @@ body.menu-is-open {
  * ------------------------------------------------------------------- */
 .display-1 {
   font-family: "Montserrat", sans-serif;
+  text-indent: 4rem;
   font-weight: 600;
   font-size: 4.6rem;
   line-height: 1.5;
@@ -1439,7 +1440,7 @@ body.menu-is-open {
   line-height: 1.333;
   text-transform: uppercase;
   letter-spacing: .25rem;
-  color: #4837dd;
+  color: var(--subhead-quemsomos);
   margin-top: 0;
   margin-bottom: 3rem;
   position: relative;
@@ -2027,7 +2028,7 @@ body.menu-is-open {
   }
 
   .header-logo img {
-    width: 150px;
+    width: 35px;
     height: 35px;
   }
 
@@ -3670,7 +3671,7 @@ html.no-csstransitions .home-content__main {
   font-size: 3rem;
   font-weight: 900;
   line-height: 1.2;
-  color: #faef5a;
+  color: var(--email);
   border-bottom: 3px solid rgba(255, 255, 255, 0.089);
 }
 
@@ -3687,14 +3688,13 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-numbers a:hover {
-  color: green;
+  color: rgb(24, 204, 105);
   text-decoration: none;
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.5);
-  border-bottom: 3px solid hsl(113, 73%, 24%);
   
 }
 
@@ -3977,9 +3977,13 @@ html {
   --lightColor: #fff;
   --header-menu-toggle: #0e0e0ed3;
 
+  /*quemsomos*/
+  --subhead-quemsomos: #eb9800;
+
   /*Contact*/
   --contact-social-icon: #f0f0f0;
   --contact-social-icon-hover: #f0b801;
+  --email: #eba100;
 
   /*body*/
   --bg-body: #121212;
@@ -4001,10 +4005,13 @@ html[data-theme=dark] {
   --lightColor: #232323;
   --header-menu-toggle: #fdfdfdd3;
   
+  /*quemsomos*/
+  --subhead-quemsomos: #fda500;
 
    /*Contact*/
    --contact-social-icon: #301886;
    --contact-social-icon-hover: #f0b801;
+   --email: #eba100;
 
   /*body*/
   --bg-body: #e6e6e6;
