@@ -3677,7 +3677,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-email a:hover,
 .contact-email a:focus {
-  border-bottom: 3px solid rgb(255, 255, 255);
+  border-bottom: 3px solid var(--contact-email-hover);
 }
 
 
@@ -3984,6 +3984,7 @@ html {
   --contact-social-icon: #f0f0f0;
   --contact-social-icon-hover: #f0b801;
   --email: #eba100;
+  --contact-email-hover: #fff;
 
   /*body*/
   --bg-body: #121212;
@@ -4012,6 +4013,7 @@ html[data-theme=dark] {
    --contact-social-icon: #301886;
    --contact-social-icon-hover: #f0b801;
    --email: #301886;
+   --contact-email-hover: #ffa600;
 
   /*body*/
   --bg-body: #e6e6e6;
