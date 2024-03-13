@@ -4008,10 +4008,10 @@ html[data-theme=dark] {
   /*quemsomos*/
   --subhead-quemsomos: #fda500;
 
-   /*Contact*/
+  /*Contact*/
    --contact-social-icon: #301886;
    --contact-social-icon-hover: #f0b801;
-   --email: #eba100;
+   --email: #301886;
 
   /*body*/
   --bg-body: #e6e6e6;
