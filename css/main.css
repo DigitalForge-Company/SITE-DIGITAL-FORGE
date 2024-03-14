@@ -1690,7 +1690,7 @@ body.menu-is-open {
   padding: 3.6rem 3rem 3.6rem 6rem;
   height: 100%;
   width: 50%;
-  background: #0C0C0C;
+  background: var(--header-nav-bg);
   color: rgba(255, 255, 255, 0.25);
   overflow-y: auto;
   overflow-x: hidden;
@@ -1729,7 +1729,7 @@ body.menu-is-open {
   margin-bottom: 7.2rem;
   margin-top: 1.2rem;
   padding-right: 140px;
-  color: #f3a600;
+  color: #eeb600;
   position: relative;
 }
 
@@ -1738,7 +1738,7 @@ body.menu-is-open {
   display: block;
   height: 1px;
   width: 110px;
-  background-color: #140972;
+  background-color: #eeb600;
   position: absolute;
   top: 50%;
   right: 0;
@@ -1821,7 +1821,7 @@ body.menu-is-open {
 
 .header-nav__social li a:hover,
 .header-nav__social li a:focus {
-  color: white;
+  color: rgb(255, 166, 0);
 }
 
 .header-nav__social li:last-child {
@@ -3975,6 +3975,7 @@ html {
   --lightBtn: #01fe62;
   --lightBg: #161616;
   --lightColor: #fff;
+  --header-nav-bg: #0C0C0C;
   --header-menu-toggle: #0e0e0ed3;
 
   /*quemsomos*/
@@ -4004,6 +4005,7 @@ html[data-theme=dark] {
   --lightBtn: #FFBD07;
   --lightBg: #e6e6e6;
   --lightColor: #232323;
+  --header-nav-bg: #f0f0f0;
   --header-menu-toggle: #fdfdfdd3;
   
   /*quemsomos*/
