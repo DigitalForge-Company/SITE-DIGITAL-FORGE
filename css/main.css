@@ -1709,13 +1709,13 @@ body.menu-is-open {
 
 .header-nav a,
 .header-nav a:visited {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--header-nav-a);
 }
 
 .header-nav a:hover,
 .header-nav a:focus,
 .header-nav a:active {
-  color: white;
+  color: rgb(253, 186, 0);
 }
 
 .header-nav h3 {
@@ -1779,7 +1779,7 @@ body.menu-is-open {
 
 .header-nav__list a {
   display: block;
-  color: #FFFFFF;
+  color: var(--header-nav-a);
   position: relative;
 }
 
@@ -1816,7 +1816,7 @@ body.menu-is-open {
 }
 
 .header-nav__social li a {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(77, 77, 77, 0.74);
 }
 
 .header-nav__social li a:hover,
@@ -3975,6 +3975,7 @@ html {
   --lightBtn: #01fe62;
   --lightBg: #161616;
   --lightColor: #fff;
+  --header-nav-a: rgba(255, 255, 255, 0.5);
   --header-nav-bg: #0C0C0C;
   --header-menu-toggle: #0e0e0ed3;
 
@@ -4005,6 +4006,7 @@ html[data-theme=dark] {
   --lightBtn: #FFBD07;
   --lightBg: #e6e6e6;
   --lightColor: #232323;
+  --header-nav-a: rgba(22, 22, 22, 0.795);
   --header-nav-bg: #f0f0f0;
   --header-menu-toggle: #fdfdfdd3;
   
