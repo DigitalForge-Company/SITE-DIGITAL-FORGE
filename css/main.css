@@ -1947,6 +1947,21 @@ body.menu-is-open {
   bottom: -9px;
 }
 
+.container-darkmode{
+  width: 48px;
+  height: 40px;
+  letter-spacing: .5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: 32px;
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin-top: -13px;
+  right: 180px;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * header
@@ -1958,6 +1973,10 @@ body.menu-is-open {
 
   .header-menu-toggle {
     right: 60px;
+  }
+
+  .container-darkmode{
+    right: 150px;
   }
 
 }
@@ -1999,6 +2018,9 @@ body.menu-is-open {
     right: 40px;
   }
 
+  .container-darkmode{
+    right: 130px;
+  }
 }
 
 @media only screen and (max-width:600px) {
@@ -2012,8 +2034,11 @@ body.menu-is-open {
   }
 
   .header-menu-toggle {
-    top: 27px;
     right: 25px;
+  }
+
+  .container-darkmode{
+    right: 110px;
   }
 
 }
@@ -2045,8 +2070,11 @@ body.menu-is-open {
   }
 
   .header-menu-toggle {
-    top: 21px;
     right: 20px;
+  }
+
+  .container-darkmode{
+    right: 10px;
   }
 
   .header-nav__social {
