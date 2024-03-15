@@ -28,22 +28,22 @@
  *    ## grid overlay
  *  # header styles
  *    ## header logo
- *    ## main navigation
+ *    ## main navigation                                  #1683 line
  *    ## mobile menu toggle 
  *  # home
  *    ## home content
  *    ## home video link
- *    ## home buttons
+ *    ## home buttons                                     #2334 line
  *    ## home scroll
  *    ## home social
  *    ## home animations
- *  # about
+ *  # about                                               #2773 line
  *    ## about process
  *  # services  
  *    ## services list
  *  # works
  *    ## bricks/masonry
- *  # clients
+ *  # clients                                             #3309 line
  *  # testimonials
  *  # contact
  *    ## contact social
@@ -51,7 +51,7 @@
  *    ## copyright
  *    ## go top
  *  # Scrollbar
- *
+ *  # Darkmode                                            #3997 line
  * =================================================================== */
 
 
@@ -1947,6 +1947,7 @@ body.menu-is-open {
   bottom: -9px;
 }
 
+/*Darkmode toggle button*/
 .container-darkmode{
   width: 48px;
   height: 40px;
