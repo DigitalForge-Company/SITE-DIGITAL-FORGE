@@ -2115,12 +2115,12 @@ body.menu-is-open {
   content: "";
   width: 50%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0);
   opacity: .5;
   z-index: 3;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
   bottom: 0;
   right: 0;
 }
@@ -2214,7 +2214,7 @@ body.menu-is-open {
   font-weight: 600;
   font-size: 1.3rem;
   line-height: 1;
-  color: #9c9c9c;
+  color: #e4e4e4;
   text-transform: uppercase;
   letter-spacing: .5rem;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2223,11 +2223,11 @@ body.menu-is-open {
 }
 
 .home-content__video .video-link:hover .video-text {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .home-content__video .video-link:hover .video-icon {
-  background-color: #fdd832;
+  background-color: #fdce32;
 }
 
 /* ------------------------------------------------------------------- 
