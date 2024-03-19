@@ -960,7 +960,7 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   background-color: #b8b8b8;
   border-color: #b8b8b8;
-  color: #000000;
+  color: #ca7a11;
   outline: 0;
 }
 
@@ -972,7 +972,7 @@ input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
   background: var(--button-sobre-nos);
-  border-color: #000000;
+  border-color: var(--border-color-sobre-nos);
   color: #FFFFFF;
 }
 
@@ -2113,9 +2113,9 @@ body.menu-is-open {
 .s-home::after {
   display: block;
   content: "";
-  width: 50%;
+  width: var(--sombra-s-home);
   height: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.932);
   opacity: .5;
   z-index: 3;
   position: absolute;
@@ -2169,7 +2169,7 @@ body.menu-is-open {
   font-size: 3.8rem;
   line-height: 1.342;
   font-style: normal;
-  color: #9c9c9c;
+  color: #dbdbdb;
 }
 
 .home-content__main {
@@ -4006,8 +4006,10 @@ html {
   --header-nav-a: rgba(255, 255, 255, 0.5);
   --header-nav-bg: #0C0C0C;
   --header-menu-toggle: #0e0e0ed3;
+  --sombra-s-home: 100%;
 
   /*quemsomos*/
+  --border-color-sobre-nos: #000;
   --subhead-quemsomos: #eb9800;
 
   /*Contact*/
@@ -4037,8 +4039,10 @@ html[data-theme=dark] {
   --header-nav-a: rgba(22, 22, 22, 0.795);
   --header-nav-bg: #f0f0f0;
   --header-menu-toggle: #fdfdfdd3;
+  --sombra-s-home: 0%;
   
   /*quemsomos*/
+  --border-color-sobre-nos: #eeeeee;
   --subhead-quemsomos: #fda500;
 
   /*Contact*/
