@@ -4008,8 +4008,10 @@ html {
   --header-menu-toggle: #0e0e0ed3;
   --sombra-s-home: 100%;
 
-  /*quemsomos*/
+  /*sobrenos*/
   --border-color-sobre-nos: #000;
+
+  /*quemsomos*/
   --subhead-quemsomos: #eb9800;
 
   /*Contact*/
@@ -4040,9 +4042,12 @@ html[data-theme=dark] {
   --header-nav-bg: #f0f0f0;
   --header-menu-toggle: #fdfdfdd3;
   --sombra-s-home: 0%;
-  
-  /*quemsomos*/
+
+
+  /*sobrenos*/
   --border-color-sobre-nos: #eeeeee;
+
+  /*quemsomos*/
   --subhead-quemsomos: #fda500;
 
   /*Contact*/
