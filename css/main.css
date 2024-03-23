@@ -3986,7 +3986,18 @@ footer a {
 background-color: #06152A;
 }
 
+#text02 {
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #f8f8f8 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #text01 {
+  font-weight: 800;
+  letter-spacing: 6px;
   text-transform: uppercase;
   background: linear-gradient(to right, #ffda34 0%, #ffa601 100%);
   -webkit-background-clip: text;
