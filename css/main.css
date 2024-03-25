@@ -4026,7 +4026,7 @@ html {
   /*quemsomos*/
   --subhead-quemsomos: #eb9800;
 
-  /*Contact*/
+  /*contact*/
   --contact-social-icon: #f0f0f0;
   --contact-social-icon-hover: #f0b801;
   --email: #eba100;
@@ -4039,7 +4039,7 @@ html {
   --bg-color-footer: #121212;
   --a-footer: #FFFFFF;
 
-  /*Barra de rolagem lateral*/
+  /*barra de rolagem lateral*/
   
   --scrollbar-thumb: #2878c4;
   --scrollbar-track: #030b16;
@@ -4062,7 +4062,7 @@ html[data-theme=dark] {
   /*quemsomos*/
   --subhead-quemsomos: #fd9800;
 
-  /*Contact*/
+  /*contact*/
    --contact-social-icon: #301886;
    --contact-social-icon-hover: #f0b801;
    --email: #301886;
@@ -4075,7 +4075,7 @@ html[data-theme=dark] {
   --bg-color-footer: #eeeeee;
   --a-footer: #1d1d1d;
 
-  /*Barra de rolagem lateral*/
+  /*barra de rolagem lateral*/
 
   --scrollbar-thumb: #004ae9;
   --scrollbar-track: #b6b8b9;
