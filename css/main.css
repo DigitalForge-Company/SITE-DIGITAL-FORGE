@@ -4064,9 +4064,9 @@ html[data-theme=dark] {
   --subhead-quemsomos: #fd9800;
 
   /*contact*/
-   --contact-social-icon: #301886;
+   --contact-social-icon: #050505;
    --contact-social-icon-hover: #f0b801;
-   --email: #301886;
+   --email: #1d1d1d;
    --contact-email-hover: #ffa600;
 
   /*body*/
