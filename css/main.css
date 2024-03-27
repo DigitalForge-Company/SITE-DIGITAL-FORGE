@@ -1847,7 +1847,7 @@ body.menu-is-open {
   display: block;
   height: 2px;
   width: 16px;
-  background-color: #FFFFFF;
+  background-color: var(--lightColor);
   position: absolute;
   top: 50%;
   left: 7px;
