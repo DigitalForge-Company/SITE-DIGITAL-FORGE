@@ -3541,7 +3541,7 @@ html.no-csstransitions .home-content__main {
   line-height: 1.6;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  color: #ebe700;
+  color: #ebb400;
 }
 
 .testimonials__author span {
@@ -3553,6 +3553,10 @@ html.no-csstransitions .home-content__main {
   color: rgba(255, 255, 255, 0.5);
   text-transform: none;
   letter-spacing: 0;
+}
+
+.testimonials__slide p{
+  color:#fff
 }
 
 /* ------------------------------------------------------------------- 
