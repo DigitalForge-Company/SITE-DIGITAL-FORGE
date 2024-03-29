@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Digital Forge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'><link rel="stylesheet" href="../css/login.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body id="particles-js"></body>
+<div class="animated bounceInDown">
+  <div class="container">
+    <span class="error animated tada" id="msg"></span>
+    <form name="form1" class="box" onsubmit="return checkStuff()">
+
+      <img src="../images/logo-icon.png" alt="Logo Digital Forge" id="logo-top">
+      <h5>Sign in to your account.</h5>
+        <input type="text" name="email" placeholder="Email" autocomplete="on">
+        <i class="typcn typcn-eye" id="eye"></i>
+        <input type="password" name="password" placeholder="Password" id="pwd" autocomplete="off">
+        <a href="#" class="forgetpass">Forget Password?</a>
+        <button class="color-pursuit-button">
+            <span>Concluir</span>
+        </button>
+        <script>
+            document.querySelector('.color-pursuit-button').onmousemove = (e) => {
+      
+              const x = e.pageX - e.target.offsetLeft
+              const y = e.pageY - e.target.offsetTop
+      
+              e.target.style.setProperty('--x', `${x}px`)
+              e.target.style.setProperty('--y', `${y}px`)
+            }
+        </script>
+      </form>
+        <a href="criar-conta-01.html" class="dnthave">Don’t have an account? Sign up</a>
+  </div> 
+      <div class="footer">
+       <span><a href="https://github.com/DigitalForge-Company"><img src="logo-icon.png" alt="Logo Digital Forge">Digital Forge</a> All Rights Reserved.</span>
+    </div>
+</div>
+
+<!-- partial -->
+  <script src='https://cldup.com/S6Ptkwu_qA.js'></script>
+  <script src="../js/login.js"></script>
+
+</body>
+</html>
