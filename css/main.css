@@ -3850,11 +3850,12 @@ background-color: #06152A;
 #text02 {
   margin-top:-50px;
   font-weight: 400;
-  letter-spacing: 0.1px;
   text-transform: uppercase;
   background: linear-gradient(to right, #f8f8f8 0%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  letter-spacing: -2px;
+  margin-right: 18px;
 }
 
 #text01 {
@@ -3864,6 +3865,7 @@ background-color: #06152A;
   background: linear-gradient(to right, #ffda34 0%, #ffa601 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  letter-spacing: 10px;
 }
 
 /*dark-mode*/
