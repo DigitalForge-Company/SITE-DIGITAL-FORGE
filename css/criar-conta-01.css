@@ -174,7 +174,7 @@ label span {
 .dnthave{
     position: absolute;
     top: 92%;
-    right: 110px;
+    right: 120px;
 }
 
 [type=checkbox]:checked + span:before {/* <-- style its checked state */
