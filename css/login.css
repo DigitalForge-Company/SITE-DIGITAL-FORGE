@@ -9,11 +9,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 
 :root {
-  --back-body: #1d243d;
+  --back-body: #1f1f1f;
   --box-h4: #5c6bc0;
   --box-h4-span: #dfdeee;
   --box-h5: #a1a4ad;
-  --box-input: #262e49;
+  --box-input: #1d2233da;
   --box-input-color: #d6d6d6;
   --input-placeholder: #565f79;
   --box-input-focus: #616161;
@@ -34,9 +34,10 @@
 }
 
 
+
 body, html {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: var(--back-body);
+  background-image: url("../images/Design\ sem\ nome.png");
   padding: 0;
   margin: 0;
 }
@@ -54,9 +55,9 @@ body, html {
   position: absolute;
   text-align: center;
   transform: translateX(-50%);
-  background-color: rgb( 33, 41, 66 );
+  background-color: rgb(18, 26, 37);
   border-radius: 9px;
-  border-top: 10px solid #e79e01e8;
+  border-top: 10px solid #fcb903;
   border-bottom: 110px solid #0a0a0a;
   width: 400px;
   height: 500px;
@@ -281,4 +282,3 @@ img{
 .color-pursuit-button:hover::before {
   --size: 400px;
 }
-
