@@ -397,15 +397,15 @@
   .wa__popup_chat_box .wa__popup_heading{
     position: relative;
     padding: 15px 43px 17px 74px;
-    color: #d9ebc6;
-    background: #2db742;
+    color: #ffffff;
+    background: #2d5db7;
   }
   .wa__popup_chat_box .wa__popup_heading_sm{
     padding: 12px 15px 17px 74px;
   }
   .wa__popup_chat_box .wa__popup_heading:before{
     content: '';
-    background: url('../img/whatsapp_logo.svg') center top no-repeat;
+    background: url('../images/hide.png') center top no-repeat;
     background-size: 33px;
     display: block;
     width: 55px;
@@ -483,26 +483,26 @@
     text-decoration: none;
     display: table;
     width: 100%;
-    border-left: 2px solid #2db742;
-    background: #f5f7f9;
+    border-left: 10px solid #eed600;
+    background: #e6e6e6;
     border-radius: 2px 4px 2px 4px;
     -webkit-border-radius: 2px 4px 2px 4px;
     -moz-border-radius: 2px 4px 2px 4px;
   }
   .wa__popup_chat_box .wa__stt:after{
     content: '';
-    background: url('../img/whatsapp_logo_green.svg') 0 0 no-repeat;
+    background: url('../images/DF_3.0_BT_500x500.png') 0 0 no-repeat;
     position: absolute;
-    right: 14px;
-    top: 26px;
-    width: 20px;
-    height: 20px;
+    right: 24px;
+    top: 15%;
+    width: 50px;
+    height: 50px;
     background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
   }
   .wa__popup_chat_box .wa__stt.wa__stt_offline:after{
-    background-image: url('../img/whatsapp_logo_gray_sm.svg');
+    background-image: url('../images/hero-bg.jpg');
   }
   .wa__popup_chat_box .wa__stt.wa__stt_online{
     transition: 0.2s ease all;
@@ -631,7 +631,7 @@
     left: -7px;
   }
   .wa__popup_call_btn{
-    background: #2db742;
+    background: #fae100;
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
@@ -653,7 +653,7 @@
     width: 20px;
     height: 20px;
     position: relative;
-    background: url('https://icons8.com.br/icon/u1NG2uJaIZiK/whatsapp') 0 0 no-repeat;
+    background: url('../images/hero-bg.jpg') 0 0 no-repeat;
     background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
@@ -668,7 +668,7 @@
   .wa__popup_call_btn.wa__popup_call_btn_lg:hover:before,
   .wa__popup_call_btn.wa__popup_call_btn_lg:focus:before,
   .wa__popup_call_btn.wa__popup_call_btn_lg:active:before{
-    background-image: url('https://icons8.com.br/icon/u1NG2uJaIZiK/whatsapp')
+    background-image: url('../images/hide.png')
   }
   
   .wa__popup_chat_box_gray{
@@ -711,7 +711,7 @@
   
   .wa__popup_chat_box_ct .wa__popup_heading_ct:before {
     content: '';
-    background: url(../img/whatsapp_logo.svg) center top no-repeat;
+    background: url('../images/hide.png') center top no-repeat;
     background-size: 30px;
     display: block;
     width: 30px;
@@ -773,7 +773,7 @@
   }
   
   .wa__popup_chat_box_ct .wa__popup_ct_content_item .wa__member_stt_online{
-    color: #2db742;
+    color: #fcce00;
     font-size: 9px;
     line-height: 12px;
     display: inline-block;
@@ -845,7 +845,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    background: transparent url('../img/x_icon.svg') center center no-repeat;
+    background: url('../images/x.png') center center no-repeat;
     background-size: 14px auto;
     -webkit-background-size: 14px auto;
     -moz-background-size: 14px auto;
