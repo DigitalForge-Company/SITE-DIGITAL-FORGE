@@ -3908,6 +3908,7 @@ html {
   --scrollbar-thumb: #2878c4;
   --scrollbar-track: #030b16;
 
+  --x: "xblack.png";
 }
 
 html[data-theme=dark] {
@@ -3943,6 +3944,8 @@ html[data-theme=dark] {
 
   --scrollbar-thumb: #004ae9;
   --scrollbar-track: #b6b8b9;
+
+  --x: "xwhite.png";
 }
 
 .container-darkmode input[type=checkbox] {

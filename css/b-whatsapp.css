@@ -845,7 +845,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    background: url('../images/x.png') center center no-repeat;
+    background: var(--x) center center no-repeat;
     background-size: 14px auto;
     -webkit-background-size: 14px auto;
     -moz-background-size: 14px auto;
@@ -901,3 +901,4 @@
     visibility: hidden;
   }
   /* ^^^--popup button--^^^ */
+
