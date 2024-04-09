@@ -812,7 +812,7 @@
   .wa__btn_popup .wa__btn_popup_icon{
     width: 56px;
     height: 56px;
-    background: #28d843;
+    background: var(--light);
     border-radius: 0%;
     -webkit-border-radius: 40%;
     -moz-border-radius: 40%;
@@ -828,7 +828,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    background: transparent url('https://icons8.com.br/icon/u1NG2uJaIZiK/whatsapp') center center no-repeat;
+    background: url('../images/DFlogoT500x500.png') center center no-repeat;
     background-size: 30px auto;
     -webkit-background-size: 30px auto;
     -moz-background-size: 30px auto;
@@ -874,16 +874,14 @@
   .wa__btn_popup .wa__btn_popup_txt{
     position: absolute;
     width: 156px;
-    right: 100%;
-    background-color: #f5f7f9;
+    right: 110%;
+    background-color: #ffffff;
     font-size: 12px;
     color: #43474e;
-    /*top: 15px;*/
-    top: 7px;
-    /* top: 50%;
+    top: 50%;
     transform: translate(0,-50%);
     -moz-transform: translate(0,-50%);
-    -webkit-transform: translate(0,-50%); */
+    -webkit-transform: translate(0,-50%);
     padding: 7px 0 7px 12px;
     margin-right: 7px;
     letter-spacing: -0.03em;
