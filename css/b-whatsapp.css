@@ -405,7 +405,7 @@
   }
   .wa__popup_chat_box .wa__popup_heading:before{
     content: '';
-    background: url('../images/hide.png') center top no-repeat;
+    background: url('') center top no-repeat;
     background-size: 33px;
     display: block;
     width: 55px;
