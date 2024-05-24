@@ -1968,11 +1968,11 @@ body.menu-is-open {
   }
 
   .header-menu-toggle {
-    right: 20px;
+    right: 10px;
   }
 
   .container-darkmode{
-    right: 10px;
+    right: 20px;
   }
 
   .header-nav__social {
