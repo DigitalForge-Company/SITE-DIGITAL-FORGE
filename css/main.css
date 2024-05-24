@@ -1878,6 +1878,7 @@ body.menu-is-open {
 
   .container-darkmode{
     right: 130px;
+    margin-top: -13px;
   }
 }
 
@@ -1897,6 +1898,7 @@ body.menu-is-open {
 
   .container-darkmode{
     right: 110px;
+    margin-top: -10px;
   }
 
 }
