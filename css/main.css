@@ -3875,7 +3875,7 @@ background-color: #06152A;
 html {
   width: 100%;
   height: 100vh;
-  --lightBtn: #1e0881;
+  --lightBtn: #261bbb67;
   --lightBg: #271cc2;
   --lightColor: #fff;
   --header-nav-a: rgba(255, 255, 255, 0.5);
