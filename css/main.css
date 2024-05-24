@@ -1948,7 +1948,7 @@ body.menu-is-open {
 .s-home {
   width: 100%;
   height: 100vh;
-  min-height: 786px;
+  min-height: 186px;
   background-color: transparent;
   position: relative;
   display: table;
