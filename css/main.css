@@ -2587,7 +2587,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:400px) {
   .s-home {
-    min-height: 630px;
+    min-height: 230px;
   }
 
   .home-content h1 {
@@ -2619,6 +2619,10 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:350px) {
+  .s-home {
+    min-height: 130px;
+  }
+
   .home-content h1 {
     font-size: 6.2rem;
   }
