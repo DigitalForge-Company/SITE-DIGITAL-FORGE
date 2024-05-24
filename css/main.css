@@ -1932,7 +1932,7 @@ body.menu-is-open {
   }
 
   .container-darkmode{
-    right: 10px;
+    right: 100px;
   }
 
   .header-nav__social {
@@ -1973,7 +1973,7 @@ body.menu-is-open {
 
   .container-darkmode{
     right: 80px;
-    margin: 0px;
+  
   }
 
   .header-nav__social {
