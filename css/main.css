@@ -125,6 +125,11 @@ p{
   margin: 1.3rem;
 }
 
+
+.contact-email{
+  text-align: center;
+}
+
 .testimonials__slider p{
   color: var(--lightColor);
   text-align: center;
@@ -3613,6 +3618,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-email a {
+  text-align: center;
   font-size: 3rem;
   font-weight: 900;
   line-height: 1.2;
@@ -3733,7 +3739,7 @@ html.no-csstransitions .home-content__main {
   .contact-social {
     font-size: 3.5rem;
   }
-
+  
 }
 
 @media only screen and (max-width:700px) {
