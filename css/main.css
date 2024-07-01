@@ -3930,6 +3930,112 @@ background-color: #06152A;
   letter-spacing: 10px;
 }
 
+/*assinaturas*/
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  margin-bottom: 350px;
+  display: flex;
+  gap: 20px;
+}
+
+.card .b01 {
+  background-color: var(--lightColor);
+  border-radius: 15px;
+  padding: 20px;
+  width: 330px;
+  color: var(--bg-body);
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 30px;
+}
+
+.card-container .b02 {
+  justify-content: center;
+  height: 570px;
+  background-color: #111;
+  margin: 0;
+  gap: 20px;
+}
+
+.card .b02 {
+  background-color: var(--lightColor);
+  border-radius: 15px;
+  padding: 20px;
+  width: 330px;
+  color: var(--bg-body);
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 30px;
+}
+
+.card-container .b03{
+  justify-content: center;
+  height: 670px;
+  background-color: #111;
+  margin: 10;
+  gap: 20px;
+}
+
+.card .b03 {
+  background-color:var(--lightColor);
+  border-radius: 15px;
+  padding: 20px;
+  width: 330px;
+  color: var(--bg-body);
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 30px;
+}
+
+.card h2 {
+  margin: 0;
+  justify-content: left;
+  align-items: left;
+  font-size: 2em;
+  color: var(--bg-body);
+}
+
+.card button {
+  background-color: var(--bg-body);
+  color: var(--a-footer);
+  border: none;
+  border-radius: 15px;
+  width: 260px;
+  padding: 2px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 20px 10px 50px 10px;
+}
+
+.card button:hover{
+  background-color: #f7bd00;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.card ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.card ul li:before {
+  content: '✔';
+  margin-right: 10px;
+  color: #ffd900;
+}
+
 /*dark-mode*/
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap");
@@ -4111,65 +4217,3 @@ html.transition *:after {
 
 /*# sourceMappingURL=main.css.map */
 
-.card-container {
-  display: flex;
-  justify-content: center;
-  height: 40vh;
-  background-color: #111;
-  margin: 0;
-}
-
-.card-container {
-  display: flex;
-  gap: 20px;
-}
-
-.card {
-  background-color: #000;
-  border-radius: 15px;
-  padding: 20px;
-  width: 330px;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  margin: 30px;
-}
-
-.card h2 {
-  margin: 0;
-  justify-content: left;
-  align-items: left;
-  font-size: 2em;
-  color: #fff;
-}
-
-.card button {
-  background-color: #fff;
-  color: #000;
-  border-radius: 15px;
-  width: 260px;
-  padding: 2px;
-  font-size: 1em;
-  cursor: pointer;
-  margin: 20px 10px 50px 10px;
-}
-
-.card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
-.card ul li {
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.card ul li:before {
-  content: '✔';
-  margin-right: 10px;
-  color: #ffd900;
-}
