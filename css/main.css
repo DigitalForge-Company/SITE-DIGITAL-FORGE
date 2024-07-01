@@ -4051,6 +4051,7 @@ html {
   --header-menu-toggle: #0e0e0ed3;
   --sombra-s-home: 100%;
   --p: #868686d8;
+  --monalisa: #f8f8f8;
 
   /*sobrenos*/
   --border-color-sobre-nos: #000;
@@ -4088,6 +4089,7 @@ html[data-theme=dark] {
   --header-menu-toggle: #fdfdfdd3;
   --sombra-s-home: 0%;
   --p: #252525d8;
+  --monalisa: #002677;
 
   /*sobrenos*/
   --border-color-sobre-nos: #eeeeee;
@@ -4224,15 +4226,13 @@ html.transition *:after {
 
 .custom-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between ;
   align-items: center;
+  margin: 260px;
   margin-bottom: 20px;
 }
 
-.custom-column {
-  flex: 1;
-  padding: 10px;
-}
+
 
 .custom-image img {
   max-width: 100%;
@@ -4247,6 +4247,7 @@ html.transition *:after {
 
 .custom-text p {
   margin: 0;
+  font-size: 24px;
 }
 
 
@@ -4256,6 +4257,8 @@ html.transition *:after {
   margin-top: 130px;
   margin-left: 30px;
 }
+
+/*loadingwave*//*----------------------------------------------------------------*/
 
 .loading-wave {
   width: 300px;
@@ -4267,11 +4270,11 @@ html.transition *:after {
 
 .loading-bar {
   width: 20px;
-  height: 10px;
+  height: 15px;
   margin: 0 5px;
-  background-color: #3498db;
+  background-color: #e72300;
   border-radius: 5px;
-  animation: loading-wave-animation 1s ease-in-out infinite;
+  animation: loading-wave-animation 1.5s ease-in-out infinite;
 }
 
 .loading-bar:nth-child(2) {
@@ -4300,3 +4303,175 @@ html.transition *:after {
   }
 }
 
+/*monalisa-----------------------------------------------------------------------------------------------*/
+
+
+.loader {
+  width: 17em;
+  height: 17em;
+}
+
+.loader path {
+  stroke: var(--monalisa);
+  stroke-width: 0.6px;
+  animation: dashArray 8s ease-in-out infinite,
+    dashOffset 8s linear infinite;
+}
+
+@keyframes dashArray {
+  0% {
+    stroke-dasharray: 0 1 359 0;
+  }
+
+  50% {
+    stroke-dasharray: 0 359 1 0;
+  }
+
+  100% {
+    stroke-dasharray: 359 1 0 0;
+  }
+}
+
+@keyframes dashOffset {
+  0% {
+    stroke-dashoffset: 365;
+  }
+
+  100% {
+    stroke-dashoffset: 5;
+  }
+}
+
+/*----------------------------------------------------------*/
+
+.container06 {
+  width: 290px;
+  height: 250px;
+}
+
+.terminal_toolbar {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 0 8px;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #212121;
+  justify-content: space-between;
+}
+
+.butt {
+  display: flex;
+  align-items: center;
+}
+
+.btn5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-right: 5px;
+  font-size: 8px;
+  height: 12px;
+  width: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 100%;
+  background: linear-gradient(#7d7871 0%, #595953 100%);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+}
+
+.btn5-color {
+  background: #ee411a;
+}
+
+.btn5:hover {
+  cursor: pointer;
+}
+
+.btn5:focus {
+  outline: none;
+}
+
+.butt--exit {
+  background: linear-gradient(#f37458 0%, #de4c12 100%);
+}
+
+.add_tab {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0 6px;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.user {
+  color: #d5d0ce;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.terminal_body {
+  background: rgba(0, 0, 0, 0.6);
+  height: calc(100% - 30px);
+  padding-top: 2px;
+  margin-top: -1px;
+  font-size: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.terminal_promt {
+  display: flex;
+}
+
+.terminal_promt span {
+  margin-left: 4px;
+}
+
+.terminal_user {
+  color: #1eff8e;
+}
+
+.terminal_location {
+  color: #4878c0;
+}
+
+.terminal_bling {
+  color: #dddddd;
+}
+
+.terminal_cursor {
+  display: block;
+  height: 14px;
+  width: 5px;
+  margin-left: 10px;
+  animation: curbl 1200ms linear infinite;
+}
+
+@keyframes curbl {
+
+  0% {
+    background: #ffffff;
+  }
+
+  49% {
+    background: #ffffff;
+  }
+
+  60% {
+    background: transparent;
+  }
+
+  99% {
+    background: transparent;
+  }
+
+  100% {
+    background: #ffffff;
+  }
+}
