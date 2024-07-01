@@ -4110,3 +4110,66 @@ html.transition *:after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+  background-color: #111;
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: #000;
+  border-radius: 15px;
+  padding: 20px;
+  width: 330px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 30px;
+}
+
+.card h2 {
+  margin: 0;
+  justify-content: left;
+  align-items: left;
+  font-size: 2em;
+  color: #fff;
+}
+
+.card button {
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
+  width: 260px;
+  padding: 2px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 20px 10px 50px 10px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.card ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.card ul li:before {
+  content: '✔';
+  margin-right: 10px;
+  color: #ffd900;
+}
